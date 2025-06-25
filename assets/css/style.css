@@ -1,11 +1,48 @@
-.header {
+.header .header-menu {
   position: sticky;
   z-index: 99;
   top: 0;
+  background: #0074BC; }
+.header .is-sticky {
+  width: 100%;
+  position: fixed;
   background: #0074BC;
-  border-bottom: 1px solid #333;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15); }
+  animation: slideDown 0.35s ease-out; }
+.header .header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 12px;
+  color: #fff; }
+  .header .header-nav a {
+    color: #fff; }
+.header .header-contact {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1; }
+  .header .header-contact li {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 6px; }
+    .header .header-contact li i {
+      margin-right: 4px;
+      font-size: 16px;
+      vertical-align: text-bottom; }
+    .header .header-contact li:last-child {
+      border: 0; }
+.header .header-social-icons i {
+  margin-left: 4px;
+  font-size: 16px;
+  vertical-align: text-bottom; }
 
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%); }
+  to {
+    transform: translateY(0); } }
 .title {
   font-weight: 700;
   font-size: 4.8em;
@@ -412,6 +449,10 @@
     height: 10px;
     border-radius: 50%;
     margin: 0 6px; }
+.carousel img {
+  max-height: 485px;
+  object-position: top;
+  object-fit: cover; }
 
 .carousel-caption {
   color: #fff;
