@@ -11,6 +11,14 @@ body{
 body footer{
     font-family: 'Roboto', sans-serif;
 }
+h1,h2,h3,h4,h5{
+    font-family: 'Montserrat';
+}
+input.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: #dd3333;
+}
 a {
     outline: none;
     text-decoration: none;

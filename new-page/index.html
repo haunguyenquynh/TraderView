@@ -1,845 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-      crossorigin="anonymous"
-    ></script>
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/common.css" rel="stylesheet" />
-    <link href="assets/css/responsive.css" rel="stylesheet" />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <title>Trade</title>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-    <header class="header">
-      <div class="header-menu">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg p-0">
-            <a class="navbar-brand" href="#"
-              ><img src="./assets/images/logo.png" width="253px" alt="menu"
-            /></a>
-            <button
-              class="navbar-toggler p-0 border-0"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbarDark"
-              aria-controls="offcanvasNavbarDark"
-              aria-label="Toggle navigation"
-            >
-              <i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
-            <div
-              class="offcanvas offcanvas-start"
-              tabindex="-1"
-              id="offcanvasNavbarDark"
-              aria-labelledby="offcanvasNavbarDarkLabel"
-            >
-              <ul
-                class="navbar-nav flex-wrap ml-auto align-items-center p-0 justify-content-end"
-              >
-                <li class="nav-item current">
-                  <a class="nav-link" href="#">Trang chủ</a>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/common.css" rel="stylesheet" />
+  <link href="assets/css/responsive.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <title>Trade</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-menu">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg p-0">
+          <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" width="253px" alt="menu" /></a>
+          <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbarDark"
+            aria-labelledby="offcanvasNavbarDarkLabel">
+            <ul class="navbar-nav flex-wrap ml-auto align-items-center p-0 justify-content-end">
+              <li class="nav-item current">
+                <a class="nav-link" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Chương trình học
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Tiếng Anh Mẫu giáo</a>
+                  <a class="dropdown-item" href="#">TIẾNG ANH THIẾU NHI</a>
+                  <a class="dropdown-item" href="#">TIẾNG ANH THIẾU NIÊN</a>
+                  <a class="dropdown-item" href="#">TIẾNG ANH GIAO TIẾP</a>
+                  <a class="dropdown-item" href="#">LUYỆN THI IELTS</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">THI THỬ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TIN TỨC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+              <li class="nav-item dropdown search-form">
+                <a class="dropdown-toggle search-toggle" href="#" role="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control rounded-0" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-search my-2 my-sm-0 rounded-0" type="submit">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="section1">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/slider2.png" class="d-block w-100" alt="1" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slider1.png" class="d-block w-100" alt="2" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section2">
+      <div class="container">
+        <div class="card-group">
+          <a href="#" class="card">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <div class="card-body">
+              <h2>Tiếng Anh Trẻ Em</h2>
+              <p>3-10 tuổi</p>
+            </div>
+          </a>
+          <a href="#" class="card red-bg">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <div class="card-body">
+              <h2>Tiếng Anh Thiếu Niên</h2>
+              <p>11-15 tuổi</p>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <div class="card-body">
+              <h2>Luyện Thi IELTS</h2>
+              <p>Từ 15 tuổi trở lên</p>
+            </div>
+          </a>
+          <a href="#" class="card red-bg">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <div class="card-body">
+              <h2>Tiếng Anh Giao Tiếp</h2>
+              <p>Học tiếng Anh chuẩn Quốc tế</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="section3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-in-left">
+            <div class="card border-0">
+              <h2
+                style="font-size: 25px;color: #dd3333;line-height: 42px;text-align: center;font-family:Montserrat;font-weight:700;font-style:normal"
+                class="masterstudy-custom-title">CHỌN PEA CHỌN THÀNH CÔNG</h2>
+              <div class="triangled_colored_separator">
+                <div class="triangle"></div>
+              </div>
+              <p style="text-align: center">Cam kết đồng hành cùng học viên đến khi đạt mục tiêu</p>
+              <img src="./assets/images/banner1.png" class="card-img-top w-100" alt="..." />
+            </div>
+          </div>
+          <div class="col-sm-6 col-in-right">
+            <div class="icon_box">
+              <div class="icon">
+               <i class="fa fa-th-large" aria-hidden="true"></i>
+              </div>
+
+              <div class="icon_text">
+                <h3>CHẤT LƯỢNG ĐÀO TẠO GIẢNG DẠY </h3>
+                <p><span style="font-weight: 400">Giáo viên có chuyên môn &amp; nghiệp vụ sư phạm, am hiểu tâm lý học
+                    viên. </span><span style="font-weight: 400">Bộ phận học vụ &amp; trợ giảng hỗ trợ xuyên suốt quá
+                    trình học.</span></p>
+              </div>
+            </div>
+            <div class="icon_box">
+              <div class="icon">
+               <i class="fa fa-th-large" aria-hidden="true"></i>
+              </div>
+
+              <div class="icon_text">
+                <h3>CHẤT LƯỢNG ĐÀO TẠO GIẢNG DẠY </h3>
+                <p><span style="font-weight: 400">Giáo viên có chuyên môn &amp; nghiệp vụ sư phạm, am hiểu tâm lý học
+                    viên. </span><span style="font-weight: 400">Bộ phận học vụ &amp; trợ giảng hỗ trợ xuyên suốt quá
+                    trình học.</span></p>
+              </div>
+            </div>
+            <div class="icon_box">
+              <div class="icon">
+               <i class="fa fa-th-large" aria-hidden="true"></i>
+              </div>
+
+              <div class="icon_text">
+                <h3>CHẤT LƯỢNG ĐÀO TẠO GIẢNG DẠY </h3>
+                <p><span style="font-weight: 400">Giáo viên có chuyên môn &amp; nghiệp vụ sư phạm, am hiểu tâm lý học
+                    viên. </span><span style="font-weight: 400">Bộ phận học vụ &amp; trợ giảng hỗ trợ xuyên suốt quá
+                    trình học.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section4" id="cac-khoa-hoc">
+      <div class="container">
+        <h2 class="title">
+          <span>CÁC KHOÁ HỌC</span>
+        </h2>
+        <p class="sub-title">
+          Cambridge đang sát cánh cùng Học sinh ở nhiều cấp độ, từ Mẫu giáo,
+          Mầm non đến Tiểu học, THCS, THPT và Người đi làm
+        </p>
+        <div class="row">
+          <div class="col-sm mb-4">
+            <a href="#">
+              <div class="card1">
+                <div class="box-img">
+                  <img
+                    src="https://cambridge.org.vn/wp-content/uploads/2019/03/children-holding-up-letters-and-numbers.jpg"
+                    width="100%" alt="blog" />
+                </div>
+                <div class="item-bottom">
+                  <h3>TIẾNG ANH MẪU GIÁO</h3>
+                  <p class="time">
+                    Chương trình Tiếng Anh Mẫu giáo được phát triển theo
+                    phương thức trẻ em học tiếng mẹ đẻ trên cơ sở thấu hiểu
+                    đặc điểm lứa tuổi và tôn trọng trí thông minh đa dạng của
+                    trẻ
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm mb-4">
+            <a href="#">
+              <div class="card1 card2">
+                <div class="box-img">
+                  <img src="https://cambridge.org.vn/wp-content/uploads/2019/03/tieng-anh-giao-tiep-cho-thieu-nhi-1.jpg"
+                    width="100%" alt="blog" />
+                </div>
+                <div class="item-bottom">
+                  <h3>TIẾNG ANH TIỂU HỌC</h3>
+                  <p class="time">
+                    Chương trình Tiếng Anh Tiểu học tại Cambridge Việt Nam
+                    giúp học sinh xây dựng lộ trình học tập từ cơ bản tới nâng
+                    cao nhằm hình thành và phát triển vốn tiếng Anh toàn diện
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm mb-4">
+            <a href="#">
+              <div class="card1 card3">
+                <div class="box-img">
+                  <img
+                    src="https://cambridge.org.vn/wp-content/uploads/2019/03/bigstock_portrait_of_happy_teens_lookin_13855142.jpg"
+                    width="100%" alt="blog" />
+                </div>
+                <div class="item-bottom">
+                  <h3>TIẾNG ANH TRUNG HỌC</h3>
+                  <p class="time">
+                    Tiếng Anh cho học sinh bậc THCS chương trình tích hợp giữa
+                    tiếng Anh giao tiếp quốc tế, luyện ngữ pháp chuyên sâu và
+                    kỹ năng làm bài thi theo chuẩn khảo thí quốc tế.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section6">
+      <div class="container">
+        <h2 class="text-primary">
+          <span style="font-weight: 300; color: #848484">Đối tác của </span>Cambridge
+        </h2>
+        <div class="owl-carousel owl-theme">
+          <div class="item-content">
+            <img src="https://cambridge.org.vn/wp-content/uploads/2017/07/lozi.png" title="" alt=""
+              class="ux-logo-image block" />
+          </div>
+          <div class="item-content">
+            <img src="https://cambridge.org.vn/wp-content/uploads/2017/07/fg.jpg" title="" alt=""
+              class="ux-logo-image block" />
+          </div>
+          <div class="item-content">
+            <img src="https://cambridge.org.vn/wp-content/uploads/2017/07/hh.png" title="" alt=""
+              class="ux-logo-image block" />
+          </div>
+          <div class="item-content">
+            <img src="https://cambridge.org.vn/wp-content/uploads/2017/07/huongnghiepaau-1.png" title="" alt=""
+              class="ux-logo-image block" />
+          </div>
+          <div class="item-content">
+            <img src="https://cambridge.org.vn/wp-content/uploads/2017/07/langmaster.png" title="" alt=""
+              class="ux-logo-image block" />
+          </div>
+          <div class="item-content">
+            <img src="https://cambridge.org.vn/wp-content/uploads/2017/07/PTI.png" title="" alt=""
+              class="ux-logo-image block" />
+          </div>
+          <div class="item-content">
+            <img src="https://cambridge.org.vn/wp-content/uploads/2017/07/234.png" title="" alt=""
+              class="ux-logo-image block" />
+          </div>
+          <div class="item-content">
+            <img src="https://cambridge.org.vn/wp-content/uploads/2017/07/cbitc-1.png" title="" alt=""
+              class="ux-logo-image block" />
+          </div>
+          <div class="item-content">
+            <img src="https://cambridge.org.vn/wp-content/uploads/2017/07/coccoc-1.png" title="" alt=""
+              class="ux-logo-image block" />
+          </div>
+          <div class="item-content">
+            <img src="https://cambridge.org.vn/wp-content/uploads/2017/07/datxanh.png" title="" alt=""
+              class="ux-logo-image block" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="icon-right">
+      <img src="./assets/images/icons/footer.svg" alt="footer" />
+    </div>
+    <div class="container">
+      <div class="list-item__footer">
+        <div class="item-content">
+          <div class="col pb-0 widget widget_text">
+            <span class="widget-title">HỆ THỐNG CHI NHÁNH</span>
+            <div class="is-divider small"></div>
+            <div class="textwidget">
+              <p>
+                Cambridge Việt Nam Là hệ thống trung tâm Anh ngữ đạt chuẩn
+                quốc tế với môi trường 100% Tiếng Anh cùng với Đội ngũ Giáo
+                viên bản ngữ, không gian thiết kế sang trọng, cơ sở vật chất
+                hiện đại cùng vị trí thuận lợi, Cambridge sẽ giúp bạn học
+                tiếng Anh theo cách tự nhiên nhất.
+              </p>
+              <ul>
+                <li class="bullet-arrow">
+                  <strong>Trụ Sở: 78 Duy Tân, Cầu Giấy, Hà Nội</strong><br />
+                  <strong>☎️ 0988550868 -&nbsp; 📧 info@cambridge.org.vn</strong>
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Chương trình học
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Tiếng Anh Mẫu giáo</a>
-                    <a class="dropdown-item" href="#">TIẾNG ANH THIẾU NHI</a>
-                    <a class="dropdown-item" href="#">TIẾNG ANH THIẾU NIÊN</a>
-                    <a class="dropdown-item" href="#">TIẾNG ANH GIAO TIẾP</a>
-                    <a class="dropdown-item" href="#">LUYỆN THI IELTS</a>
-                  </div>
+                <li>
+                  <strong>CƠ SỞ 1 : CAMBRIDGE PHÚC YÊN<br /> </strong>Địa chỉ
+                  : Phố Tống Duy Tân&nbsp; - KĐT Đồng Sơn - TP. Phúc Yên -
+                  Vĩnh Phúc<br />
+                  ☎️ Hotline : 0988.550.868
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">THI THỬ</a>
+                <li>
+                  <strong>CƠ SỞ 2 : </strong><strong>CAMBRIDGE Ý YÊN<br /> </strong>Địa chỉ : Đường 57B
+                  - Tổ 10 - Thị Trấn Lâm - Ý Yên - Nam Định<br />
+                  ☎️ Hotline : 0988.550.868
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">TIN TỨC</a>
+                <li>
+                  <strong>CƠ SỞ 3 : CAMBRIDGE HẢI HẬU</strong>&nbsp;:<br />
+                  Địa chỉ : Khu 7 - Thị Trấn Yên Định - Hải Hậu - Nam Định<br />
+                  ☎️ Hotline : 0395.915.895
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Liên hệ</a>
+                <li>
+                  <strong>CƠ SỞ 4 : </strong><strong>CAMBRIDGE XUÂN&nbsp;</strong><b>HÒA</b><br />
+                  Địa chỉ : Tổ 1 Phường Xuân Hòa - TP. Phúc Yên - Vĩnh Phúc<br />
+                  ☎️ Hotline : 0869.916.889
                 </li>
-                  <li class="nav-item dropdown search-form">
-                  <a
-                    class="dropdown-toggle search-toggle"
-                    href="#"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </a>
-                  <div class="dropdown-menu">
-                    <form class="form-inline my-2 my-lg-0">
-                      <input
-                        class="form-control rounded-0"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                      />
-                      <button
-                        class="btn btn-search my-2 my-sm-0 rounded-0"
-                        type="submit"
-                      >
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                      </button>
-                    </form>
-                  </div>
+                <li>
+                  <strong>CƠ SỞ 5 : </strong><strong>CAMBRIDGE VĨNH YÊN</strong><br />
+                  Địa chỉ : Số 7 Đường Hùng Vương - Phường Hội Hợp - TP. Vĩnh
+                  Yên - Vĩnh Phúc<br />
+                  ☎️ Hotline : 0963.276.998
+                </li>
+                <li>
+                  <strong>CƠ SỞ 6 : CAMBRIDGE BẮC NINH<br /> </strong>Địa chỉ
+                  : 302 Bình Than, Võ Cường, Bắc Ninh<br />
+                  ☎️ 0866.855.886
+                </li>
+                <li>
+                  <strong>CƠ SỞ 7 : CAMBRIDGE PHỦ LÝ<br /> </strong>Địa chỉ:
+                  Tòa nhà Thảo Nguyên Xanh - P. Lê Hồng Phong - TP. Phủ Lý -
+                  Hà Nam<br />
+                  ☎️ Hotline : 0969908397
+                </li>
+                <li>
+                  <strong>CƠ SỞ 8 : CAMBRIDGE NINH BÌNH<br /> </strong>Địa
+                  chỉ: Số 246 Hải Thượng Lãn Ông - P.Phúc Thành - TP. Ninh
+                  Bình<br />
+                  ☎️ Hotline : 0971333606
+                </li>
+                <li>
+                  <strong>CƠ SỞ 9 : CAMBRIDGE VIỆT TRÌ<br /> </strong>Địa chỉ:
+                  Số 5 Hùng Duệ Vương - P.Gia Cẩm - TP.Việt Trì<br />
+                  ☎️ Hotline : 0988550868
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>CƠ SỞ 10 : MẦM NON CAMBRIDGE VĨNH YÊN 1<br /> </strong>Địa chỉ: Số14 Lê Đĩnh Chi - KĐT Chùa Hà
+                  - TP Vĩnh Yên<br />
+                  ☎️ Hotline : 0983070623
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>CƠ SỞ 11: MẦM NON CAMBRIDGE VĨNH YÊN 2<br /> </strong>Địa chỉ: Phố Đào Tấn - Phường Đồng Tâm -
+                  TP Vĩnh Yên
+                </li>
+                <li>☎️ Hotline : 0979.53.55.96</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>CƠ SỞ 12 : MẦM NON CAMBRIDGE PHÚC YÊN<br /> </strong>Địa chỉ: Tổ 4 - KĐT Hùng Vương - P. Hùng
+                  Vương - TP Phúc
+                  Yên
+                </li>
+                <li>☎️ Hotline : 0988.550.868</li>
+                <li>
+                  <strong>CƠ SỞ 13 : MẦM NON CAMBRIDGE VĨNH YÊN<br /> </strong>Địa chỉ : 14 Lê Đĩnh Chi - KĐT Chùa Hà -
+                  TP. Vĩnh Yên -
+                  Vĩnh Phúc<br />
+                  ☎️ 0983.070.623
                 </li>
               </ul>
             </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <div class="main-content">
-      <div class="section1">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2022/05/Xanh-d%C6%B0%C6%A1ng-v%C3%A0-Cam-Tr%C6%B0%E1%BB%9Dng-2-1.png"
-                class="d-block w-100"
-                alt="1"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <div class="text-inner text-left">
-                  <h3 class="uppercase">
-                    <strong>TỰ TIN GIAO TIẾP TIẾNG ANH</strong>
-                  </h3>
-                  <h3>
-                    <span style="color: #ff9900"
-                      >Trải nghiệm thực tế với GV&nbsp;Native</span
-                    >
-                  </h3>
-                  <p>
-                    Thiếu Trải Nghiệm Thực Tế là một thiệt thòi của thế hệ trẻ
-                    Việt. Chính vì vậy, đa số người Việt không thể nói tiếng Anh
-                    tốt dù ngữ pháp rất giỏi.<br />Đến với Cambridge bạn sẽ được
-                    kiểm tra phỏng vấn và học trải nghiệm trực tiếp với Giáo
-                    viên bản xứ hoàn toàn miễn phí.
-                  </p>
-                  <p>&nbsp;</p>
-                  <a
-                    href="/lien-he/"
-                    target="_self"
-                    class="btn btn-primary text-uppercase rounded-0 font-weight-bold"
-                  >
-                    <span>Đăng ký học thử miễn phí</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2022/05/Xanh-d%C6%B0%C6%A1ng-v%C3%A0-Cam-Tr%C6%B0%E1%BB%9Dng-2-1.png"
-                class="d-block w-100"
-                alt="2"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <div class="text-inner text-left">
-                  <h3 class="uppercase">
-                    <strong>TỰ TIN GIAO TIẾP TIẾNG ANH</strong>
-                  </h3>
-                  <h3>
-                    <span style="color: #ff9900"
-                      >Trải nghiệm thực tế với GV&nbsp;Native</span
-                    >
-                  </h3>
-                  <p>
-                    Thiếu Trải Nghiệm Thực Tế là một thiệt thòi của thế hệ trẻ
-                    Việt. Chính vì vậy, đa số người Việt không thể nói tiếng Anh
-                    tốt dù ngữ pháp rất giỏi.<br />Đến với Cambridge bạn sẽ được
-                    kiểm tra phỏng vấn và học trải nghiệm trực tiếp với Giáo
-                    viên bản xứ hoàn toàn miễn phí.
-                  </p>
-                  <p>&nbsp;</p>
-                  <a
-                    href="/lien-he/"
-                    target="_self"
-                    class="btn btn-primary text-uppercase rounded-0 font-weight-bold"
-                  >
-                    <span>Đăng ký học thử miễn phí</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2022/05/Xanh-d%C6%B0%C6%A1ng-v%C3%A0-Cam-Tr%C6%B0%E1%BB%9Dng-2-1.png"
-                class="d-block w-100"
-                alt="3"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <div class="text-inner text-left">
-                  <h3 class="uppercase">
-                    <strong>TỰ TIN GIAO TIẾP TIẾNG ANH</strong>
-                  </h3>
-                  <h3>
-                    <span style="color: #ff9900"
-                      >Trải nghiệm thực tế với GV&nbsp;Native</span
-                    >
-                  </h3>
-                  <p>
-                    Thiếu Trải Nghiệm Thực Tế là một thiệt thòi của thế hệ trẻ
-                    Việt. Chính vì vậy, đa số người Việt không thể nói tiếng Anh
-                    tốt dù ngữ pháp rất giỏi.<br />Đến với Cambridge bạn sẽ được
-                    kiểm tra phỏng vấn và học trải nghiệm trực tiếp với Giáo
-                    viên bản xứ hoàn toàn miễn phí.
-                  </p>
-                  <p>&nbsp;</p>
-                  <a
-                    href="/lien-he/"
-                    target="_self"
-                    class="btn btn-primary text-uppercase rounded-0 font-weight-bold"
-                  >
-                    <span>Đăng ký học thử miễn phí</span>
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
-          <button
-            class="carousel-control-prev btn-control"
-            type="button"
-            data-target="#carouselExampleIndicators"
-            data-slide="prev"
-          >
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-          </button>
-          <button
-            class="carousel-control-next btn-control"
-            type="button"
-            data-target="#carouselExampleIndicators"
-            data-slide="next"
-          >
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </button>
         </div>
-      </div>
-      <div class="section2">
-        <div class="container">
-          <div class="card-group">
-            <div class="card">
-              <div style="width: 205px; margin: 0 auto 1em">
-                <img
-                  src="./assets/images/banner1.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card-body">
-                <p>
-                  <br />Năm 1983, tiến sĩ Howard Gardner - một nhà tâm lý học
-                  nổi tiếng của Đại học Harvard- đã xuất bản một cuốn sách có
-                  nhan đề “Frames of Mind” (tạm dịch “Cơ cấu của trí tuệ”),
-                  trong đó ông công bố các nghiên cứu và lý thuyết của mình về
-                  sự đa dạng của trí thông minh&nbsp;<br />Theo Gardner, trí
-                  thông minh (intelligence) được ông quan niệm như sau: “là khả
-                  năng giải quyết các vấn đề hoặc tạo ra các sản phẩm mà các
-                  giải pháp hay sản phẩm này có giá trị trong một hay nhiều môi
-                  trường văn hóa” và trí thông minh cũng không thể chỉ được đo
-                  lường duy nhất qua chỉ số IQ.<br />
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div style="width: 220px; margin: 0 auto 1em">
-                <img
-                  src="./assets/images/banner2.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-              <div class="card-body">
-                <ul>
-                  <li>
-                    <span
-                      ><strong>Lớp luyện thi Cambridge A1 Movers</strong
-                      >&nbsp;dành cho học sinh tiểu học và trung học cơ sở, các
-                      học sinh đã vượt qua trình độ Pre A1 Starters.</span
-                    >
-                  </li>
-                  <li>
-                    <span
-                      >Học sinh muốn luyện thi chứng chỉ Cambridge A1 Movers và
-                      nâng cao trình độ để từ đó chuẩn bị nền tảng vững chắc cho
-                      các kỳ thi chứng chỉ khác như Flyers, KET, PET, IELTS,
-                      TOEFL.</span
-                    >
-                  </li>
-                  <li>
-                    <span
-                      >Kỳ thi này được thiết kế nhằm giúp trẻ xây dựng các kỹ
-                      năng ngôn ngữ của mình và phát triển sự tự tin trong sử
-                      dụng tiếng Anh.</span
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="card">
-              <div style="margin: 0 auto 1em">
-                <img
-                  src="./assets/images/banner3.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-              <div class="card-body">
-                <p style="text-align: left">
-                  <span
-                    ><span style="color: #ed1c24"
-                      ><strong
-                        >Lộ trình học IELTS 6.5 chi tiết cho người mới bắt
-                        đầu:<br /></strong></span
-                    ><span style="font-size: 14.4px"
-                      >- Bạn muốn có sự chuẩn bị tốt cho công việc trong tương
-                      lai và chứng chỉ IELTS 6.5 là một trong số đó.<br /></span
-                    ><span style="font-size: 14.4px">- Bạn muốn&nbsp;</span
-                    ><a
-                      style="font-size: 14.4px"
-                      href="https://dantri.com.vn/giao-duc-khuyen-hoc/65-ielts-co-hoi-vao-thang-nhieu-truong-dai-hoc-20180403093559236.htm"
-                      target="_blank"
-                      rel="noopener"
-                      >quy đổi IELTS 6.5 cho điểm môn tiếng Anh trên trường</a
-                    ><span style="font-size: 14.4px">.<br /></span
-                    ><span style="font-size: 14.4px"
-                      >- IELTS 6.5 là chứng chỉ bạn cần để có được tấm vé du
-                      học.<br /></span
-                    >Và rất rất nhiều mục tiêu khác nữa, nên bạn rất muốn sở hữu
-                    IELTS 6.5</span
-                  ><br /><span
-                    >Tuy nhiên, khi chúng ta bắt tay vào quá trình học thì mới
-                    vỡ lẽ IELTS yêu cầu quá nhiều kiến thức…&nbsp;</span
-                  ><br /><span
-                    >Đừng lo, khi đến với Cambridge Việt Nam bạn sẽ được tư vấn
-                    một lộ trìn chi tiết và đầy đủ nhất để sớm đạt được IELTS
-                    6.5 giúp bạn trở thành công dân toàn cầu thỏa sức vươn mình
-                    ra thế giới.</span
-                  >
-                </p>
+        <div class="item-content">
+          <div id="text-2" class="col pb-0 widget widget_text">
+            <span class="widget-title">Liên hệ</span>
+            <div class="is-divider small"></div>
+            <div class="textwidget">
+              <p>
+                Mọi chi tiết liên hệ vui lòng liên lạc theo thông tin :<br />
+                Địa chỉ : 78 Duy Tân, Cầu Giấy, Hà Nội<br />
+                Tel : 0988.550.868<br />
+                Email : info@cambridge.org.vn
+              </p>
+              <div class="social-icons share-icons share-row relative icon-style-outline">
+                <a href="whatsapp://send?text=Trang%20ch%E1%BB%A7 - https://cambridge.org.vn/"
+                  data-action="share/whatsapp/share"
+                  class="icon button circle is-outline tooltip whatsapp show-for-medium tooltipstered"><i
+                    class="icon-phone"></i></a><a href="//cambridge.org.vn/" data-label="Facebook"
+                  onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
+                  rel="noopener noreferrer nofollow" target="_blank"
+                  class="icon button circle is-outline tooltip facebook tooltipstered"><i
+                    class="icon-facebook"></i></a><a href="//cambridge.org.vn/"
+                  onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
+                  rel="noopener noreferrer nofollow" target="_blank"
+                  class="icon button circle is-outline tooltip twitter tooltipstered"><i class="icon-twitter"></i></a><a
+                  href="mailto:enteryour@addresshere.com?subject=Trang%20ch%E1%BB%A7&amp;body=Check%20this%20out:%20https://cambridge.org.vn/"
+                  rel="nofollow" class="icon button circle is-outline tooltip email tooltipstered"><i
+                    class="icon-envelop"></i></a><a
+                  href="//pinterest.com/pin/create/button/?url=https://cambridge.org.vn/&amp;media=https://cambridge.org.vn/wp-content/uploads/2019/03/tieng-anh-giao-tiep-cho-thieu-nhi-1.jpg&amp;description=Trang%20ch%E1%BB%A7"
+                  onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
+                  rel="noopener noreferrer nofollow" target="_blank"
+                  class="icon button circle is-outline tooltip pinterest tooltipstered"><i
+                    class="icon-pinterest"></i></a><a href="//cambridge.org.vn/" target="_blank"
+                  class="icon button circle is-outline tooltip google-plus tooltipstered"
+                  onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
+                  rel="noopener noreferrer nofollow"><i class="icon-google-plus"></i></a><a
+                  href="//cambridge.org.vn/&amp;title=Trang%20ch%E1%BB%A7"
+                  onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
+                  rel="noopener noreferrer nofollow" target="_blank"
+                  class="icon button circle is-outline tooltip linkedin tooltipstered"><i class="icon-linkedin"></i></a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="section3">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6"></div>
-            <div class="col-sm-6">
-              <div class="card border-0">
-                <h2
-                  class="text-primary font-weight-bold"
-                  style="text-align: left; margin-bottom: 50px"
-                >
-                  <span style="font-weight: 300; color: #848484"
-                    >TẠI SAO NÊN CHỌN&nbsp;</span
-                  >CAMBRIDGE
-                </h2>
-                <div style="margin-bottom: 1em">
-                  <img
-                    src="https://cambridge.org.vn/wp-content/uploads/2019/03/tieng-anh-giao-tiep-cho-thieu-nhi-1.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                </div>
-                <div class="card-body p-0">
-                  <p style="text-align: left; margin-bottom: 20px">
-                    Cambridge Việt Nam được thành lập năm 2016, có trụ sở tại
-                    Tòa nhà Sannam, 78 Duy Tân, Cầu Giấy, Hà Nội. Cambridge Việt
-                    Nam đã không ngừng lớn mạnh thành tổ chức giáo dục hàng đầu
-                    tại Việt Nam với nhiều loại hình đào tạo phù hợp với các đối
-                    tượng học viên khác nhau và trở thành một trong những tổ
-                    chức giáo dục Anh ngữ uy tín nhất tại Việt Nam với hệ thống
-                    chi nhánh đào tạo tại nhiều tỉnh thành trên toàn quốc. Để có
-                    được điều ấy phần lớn dựa vào uy tín và năng lực cũng như
-                    chất lượng đào tạo của Cambridge Việt Nam.
-                  </p>
-                  <a href="#cac-khoa-hoc" class="btn btn-outline"
-                    >Các khóa học của chúng tôi</a
-                  >
-                </div>
-              </div>
+        <div class="item-content">
+          <div id="text-5" class="col pb-0 widget widget_text">
+            <span class="widget-title">Cambridge trên Facebook</span>
+            <div class="is-divider small"></div>
+            <div class="textwidget">
+              <p>
+                <iframe style="border: none; overflow: hidden"
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCambridge.org.vn%2F&amp;tabs&amp;width=340&amp;height=180&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
+                  frameborder="0" scrolling="no"></iframe>
+                <a style="color: transparent" href="https://789bethv.com/">https://789bethv.com/</a>
+                <a style="color: transparent" href="https://go99.vote/">Go99</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="section4" id="cac-khoa-hoc">
-        <div class="container">
-          <h2 class="title">
-            <span>CÁC KHOÁ HỌC</span>
-          </h2>
-          <p class="sub-title">
-            Cambridge đang sát cánh cùng Học sinh ở nhiều cấp độ, từ Mẫu giáo,
-            Mầm non đến Tiểu học, THCS, THPT và Người đi làm
-          </p>
-          <div class="row">
-            <div class="col-sm mb-4">
-              <a href="#">
-                <div class="card1">
-                  <div class="box-img">
-                    <img
-                      src="https://cambridge.org.vn/wp-content/uploads/2019/03/children-holding-up-letters-and-numbers.jpg"
-                      width="100%"
-                      alt="blog"
-                    />
-                  </div>
-                  <div class="item-bottom">
-                    <h3>TIẾNG ANH MẪU GIÁO</h3>
-                    <p class="time">
-                      Chương trình Tiếng Anh Mẫu giáo được phát triển theo
-                      phương thức trẻ em học tiếng mẹ đẻ trên cơ sở thấu hiểu
-                      đặc điểm lứa tuổi và tôn trọng trí thông minh đa dạng của
-                      trẻ
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm mb-4">
-              <a href="#">
-                <div class="card1 card2">
-                  <div class="box-img">
-                    <img
-                      src="https://cambridge.org.vn/wp-content/uploads/2019/03/tieng-anh-giao-tiep-cho-thieu-nhi-1.jpg"
-                      width="100%"
-                      alt="blog"
-                    />
-                  </div>
-                  <div class="item-bottom">
-                    <h3>TIẾNG ANH TIỂU HỌC</h3>
-                    <p class="time">
-                      Chương trình Tiếng Anh Tiểu học tại Cambridge Việt Nam
-                      giúp học sinh xây dựng lộ trình học tập từ cơ bản tới nâng
-                      cao nhằm hình thành và phát triển vốn tiếng Anh toàn diện
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm mb-4">
-              <a href="#">
-                <div class="card1 card3">
-                  <div class="box-img">
-                    <img
-                      src="https://cambridge.org.vn/wp-content/uploads/2019/03/bigstock_portrait_of_happy_teens_lookin_13855142.jpg"
-                      width="100%"
-                      alt="blog"
-                    />
-                  </div>
-                  <div class="item-bottom">
-                    <h3>TIẾNG ANH TRUNG HỌC</h3>
-                    <p class="time">
-                      Tiếng Anh cho học sinh bậc THCS chương trình tích hợp giữa
-                      tiếng Anh giao tiếp quốc tế, luyện ngữ pháp chuyên sâu và
-                      kỹ năng làm bài thi theo chuẩn khảo thí quốc tế.
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section6">
-        <div class="container">
-          <h2 class="text-primary">
-            <span style="font-weight: 300; color: #848484">Đối tác của </span
-            >Cambridge
-          </h2>
-          <div class="owl-carousel owl-theme">
-            <div class="item-content">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2017/07/lozi.png"
-                title=""
-                alt=""
-                class="ux-logo-image block"
-              />
-            </div>
-            <div class="item-content">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2017/07/fg.jpg"
-                title=""
-                alt=""
-                class="ux-logo-image block"
-              />
-            </div>
-            <div class="item-content">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2017/07/hh.png"
-                title=""
-                alt=""
-                class="ux-logo-image block"
-              />
-            </div>
-            <div class="item-content">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2017/07/huongnghiepaau-1.png"
-                title=""
-                alt=""
-                class="ux-logo-image block"
-              />
-            </div>
-            <div class="item-content">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2017/07/langmaster.png"
-                title=""
-                alt=""
-                class="ux-logo-image block"
-              />
-            </div>
-            <div class="item-content">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2017/07/PTI.png"
-                title=""
-                alt=""
-                class="ux-logo-image block"
-              />
-            </div>
-            <div class="item-content">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2017/07/234.png"
-                title=""
-                alt=""
-                class="ux-logo-image block"
-              />
-            </div>
-            <div class="item-content">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2017/07/cbitc-1.png"
-                title=""
-                alt=""
-                class="ux-logo-image block"
-              />
-            </div>
-            <div class="item-content">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2017/07/coccoc-1.png"
-                title=""
-                alt=""
-                class="ux-logo-image block"
-              />
-            </div>
-            <div class="item-content">
-              <img
-                src="https://cambridge.org.vn/wp-content/uploads/2017/07/datxanh.png"
-                title=""
-                alt=""
-                class="ux-logo-image block"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <p class="copyright">Copyright © 2022 Dradex</p>
     </div>
-    <div class="footer">
-      <div class="icon-right">
-        <img src="./assets/images/icons/footer.svg" alt="footer" />
-      </div>
-      <div class="container">
-        <div class="list-item__footer">
-          <div class="item-content">
-            <div class="col pb-0 widget widget_text">
-              <span class="widget-title">HỆ THỐNG CHI NHÁNH</span>
-              <div class="is-divider small"></div>
-              <div class="textwidget">
-                <p>
-                  Cambridge Việt Nam Là hệ thống trung tâm Anh ngữ đạt chuẩn
-                  quốc tế với môi trường 100% Tiếng Anh cùng với Đội ngũ Giáo
-                  viên bản ngữ, không gian thiết kế sang trọng, cơ sở vật chất
-                  hiện đại cùng vị trí thuận lợi, Cambridge sẽ giúp bạn học
-                  tiếng Anh theo cách tự nhiên nhất.
-                </p>
-                <ul>
-                  <li class="bullet-arrow">
-                    <strong>Trụ Sở: 78 Duy Tân, Cầu Giấy, Hà Nội</strong><br />
-                    <strong
-                      >☎️ 0988550868 -&nbsp; 📧 info@cambridge.org.vn</strong
-                    >
-                  </li>
-                  <li>
-                    <strong>CƠ SỞ 1 : CAMBRIDGE PHÚC YÊN<br /> </strong>Địa chỉ
-                    : Phố Tống Duy Tân&nbsp; - KĐT Đồng Sơn - TP. Phúc Yên -
-                    Vĩnh Phúc<br />
-                    ☎️ Hotline : 0988.550.868
-                  </li>
-                  <li>
-                    <strong>CƠ SỞ 2 : </strong
-                    ><strong>CAMBRIDGE Ý YÊN<br /> </strong>Địa chỉ : Đường 57B
-                    - Tổ 10 - Thị Trấn Lâm - Ý Yên - Nam Định<br />
-                    ☎️ Hotline : 0988.550.868
-                  </li>
-                  <li>
-                    <strong>CƠ SỞ 3 : CAMBRIDGE HẢI HẬU</strong>&nbsp;:<br />
-                    Địa chỉ : Khu 7 - Thị Trấn Yên Định - Hải Hậu - Nam Định<br />
-                    ☎️ Hotline : 0395.915.895
-                  </li>
-                  <li>
-                    <strong>CƠ SỞ 4 : </strong
-                    ><strong>CAMBRIDGE XUÂN&nbsp;</strong><b>HÒA</b><br />
-                    Địa chỉ : Tổ 1 Phường Xuân Hòa - TP. Phúc Yên - Vĩnh Phúc<br />
-                    ☎️ Hotline : 0869.916.889
-                  </li>
-                  <li>
-                    <strong>CƠ SỞ 5 : </strong
-                    ><strong>CAMBRIDGE VĨNH YÊN</strong><br />
-                    Địa chỉ : Số 7 Đường Hùng Vương - Phường Hội Hợp - TP. Vĩnh
-                    Yên - Vĩnh Phúc<br />
-                    ☎️ Hotline : 0963.276.998
-                  </li>
-                  <li>
-                    <strong>CƠ SỞ 6 : CAMBRIDGE BẮC NINH<br /> </strong>Địa chỉ
-                    : 302 Bình Than, Võ Cường, Bắc Ninh<br />
-                    ☎️ 0866.855.886
-                  </li>
-                  <li>
-                    <strong>CƠ SỞ 7 : CAMBRIDGE PHỦ LÝ<br /> </strong>Địa chỉ:
-                    Tòa nhà Thảo Nguyên Xanh - P. Lê Hồng Phong - TP. Phủ Lý -
-                    Hà Nam<br />
-                    ☎️ Hotline : 0969908397
-                  </li>
-                  <li>
-                    <strong>CƠ SỞ 8 : CAMBRIDGE NINH BÌNH<br /> </strong>Địa
-                    chỉ: Số 246 Hải Thượng Lãn Ông - P.Phúc Thành - TP. Ninh
-                    Bình<br />
-                    ☎️ Hotline : 0971333606
-                  </li>
-                  <li>
-                    <strong>CƠ SỞ 9 : CAMBRIDGE VIỆT TRÌ<br /> </strong>Địa chỉ:
-                    Số 5 Hùng Duệ Vương - P.Gia Cẩm - TP.Việt Trì<br />
-                    ☎️ Hotline : 0988550868
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <strong
-                      >CƠ SỞ 10 : MẦM NON CAMBRIDGE VĨNH YÊN 1<br /> </strong
-                    >Địa chỉ: Số14 Lê Đĩnh Chi - KĐT Chùa Hà - TP Vĩnh Yên<br />
-                    ☎️ Hotline : 0983070623
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <strong
-                      >CƠ SỞ 11: MẦM NON CAMBRIDGE VĨNH YÊN 2<br /> </strong
-                    >Địa chỉ: Phố Đào Tấn - Phường Đồng Tâm - TP Vĩnh Yên
-                  </li>
-                  <li>☎️ Hotline : 0979.53.55.96</li>
-                </ul>
-                <ul>
-                  <li>
-                    <strong>CƠ SỞ 12 : MẦM NON CAMBRIDGE PHÚC YÊN<br /> </strong
-                    >Địa chỉ: Tổ 4 - KĐT Hùng Vương - P. Hùng Vương - TP Phúc
-                    Yên
-                  </li>
-                  <li>☎️ Hotline : 0988.550.868</li>
-                  <li>
-                    <strong>CƠ SỞ 13 : MẦM NON CAMBRIDGE VĨNH YÊN<br /> </strong
-                    >Địa chỉ : 14 Lê Đĩnh Chi - KĐT Chùa Hà - TP. Vĩnh Yên -
-                    Vĩnh Phúc<br />
-                    ☎️ 0983.070.623
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="item-content">
-            <div id="text-2" class="col pb-0 widget widget_text">
-              <span class="widget-title">Liên hệ</span>
-              <div class="is-divider small"></div>
-              <div class="textwidget">
-                <p>
-                  Mọi chi tiết liên hệ vui lòng liên lạc theo thông tin :<br />
-                  Địa chỉ : 78 Duy Tân, Cầu Giấy, Hà Nội<br />
-                  Tel : 0988.550.868<br />
-                  Email : info@cambridge.org.vn
-                </p>
-                <div
-                  class="social-icons share-icons share-row relative icon-style-outline"
-                >
-                  <a
-                    href="whatsapp://send?text=Trang%20ch%E1%BB%A7 - https://cambridge.org.vn/"
-                    data-action="share/whatsapp/share"
-                    class="icon button circle is-outline tooltip whatsapp show-for-medium tooltipstered"
-                    ><i class="icon-phone"></i></a
-                  ><a
-                    href="//cambridge.org.vn/"
-                    data-label="Facebook"
-                    onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                    class="icon button circle is-outline tooltip facebook tooltipstered"
-                    ><i class="icon-facebook"></i></a
-                  ><a
-                    href="//cambridge.org.vn/"
-                    onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                    class="icon button circle is-outline tooltip twitter tooltipstered"
-                    ><i class="icon-twitter"></i></a
-                  ><a
-                    href="mailto:enteryour@addresshere.com?subject=Trang%20ch%E1%BB%A7&amp;body=Check%20this%20out:%20https://cambridge.org.vn/"
-                    rel="nofollow"
-                    class="icon button circle is-outline tooltip email tooltipstered"
-                    ><i class="icon-envelop"></i></a
-                  ><a
-                    href="//pinterest.com/pin/create/button/?url=https://cambridge.org.vn/&amp;media=https://cambridge.org.vn/wp-content/uploads/2019/03/tieng-anh-giao-tiep-cho-thieu-nhi-1.jpg&amp;description=Trang%20ch%E1%BB%A7"
-                    onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                    class="icon button circle is-outline tooltip pinterest tooltipstered"
-                    ><i class="icon-pinterest"></i></a
-                  ><a
-                    href="//cambridge.org.vn/"
-                    target="_blank"
-                    class="icon button circle is-outline tooltip google-plus tooltipstered"
-                    onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
-                    rel="noopener noreferrer nofollow"
-                    ><i class="icon-google-plus"></i></a
-                  ><a
-                    href="//cambridge.org.vn/&amp;title=Trang%20ch%E1%BB%A7"
-                    onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                    class="icon button circle is-outline tooltip linkedin tooltipstered"
-                    ><i class="icon-linkedin"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item-content">
-            <div id="text-5" class="col pb-0 widget widget_text">
-              <span class="widget-title">Cambridge trên Facebook</span>
-              <div class="is-divider small"></div>
-              <div class="textwidget">
-                <p>
-                  <iframe
-                    style="border: none; overflow: hidden"
-                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCambridge.org.vn%2F&amp;tabs&amp;width=340&amp;height=180&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
-                    frameborder="0"
-                    scrolling="no"
-                  ></iframe>
-                  <a style="color: transparent" href="https://789bethv.com/"
-                    >https://789bethv.com/</a
-                  >
-                  <a style="color: transparent" href="https://go99.vote/"
-                    >Go99</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="copyright">Copyright © 2022 Dradex</p>
-      </div>
-    </div>
-  </body>
-  <script>
-    const headers = document.querySelectorAll(".header-menu");
-    const toggleClass = "is-sticky";
+  </div>
+</body>
+<script>
+  const headers = document.querySelectorAll(".header-menu");
+  const toggleClass = "is-sticky";
 
-    window.addEventListener("scroll", () => {
-      const currentScroll = window.pageYOffset;
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
 
-      headers.forEach((header) => {
-        if (currentScroll > 150 && !header.classList.contains(toggleClass)) {
-          header.classList.add(toggleClass);
-        } else if (
-          currentScroll <= 150 &&
-          header.classList.contains(toggleClass)
-        ) {
-          header.classList.remove(toggleClass);
-        }
-      });
+    headers.forEach((header) => {
+      if (currentScroll > 150 && !header.classList.contains(toggleClass)) {
+        header.classList.add(toggleClass);
+      } else if (
+        currentScroll <= 150 &&
+        header.classList.contains(toggleClass)
+      ) {
+        header.classList.remove(toggleClass);
+      }
     });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: true,
-        dots: false,
-        stagePadding: 50,
-        responsive: {
-          0: {
-            items: 3,
-          },
-          576: {
-            items: 4,
-          },
-          768: {
-            items: 5,
-          },
-          992: {
-            items: 7,
-          },
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      stagePadding: 50,
+      responsive: {
+        0: {
+          items: 3,
         },
-      });
+        576: {
+          items: 4,
+        },
+        768: {
+          items: 5,
+        },
+        992: {
+          items: 7,
+        },
+      },
     });
-  </script>
-  <script
-    src="./assets/css/bootstrap.bundle.min.js"
-    class="astro-vvvwv3sm"
-  ></script>
+  });
+</script>
+<script src="./assets/css/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
+
 </html>
