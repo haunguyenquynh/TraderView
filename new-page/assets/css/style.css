@@ -421,7 +421,8 @@
     bottom: -10px;
     height: 3px;
     background-color: #dd3333;
-    z-index: 18; }
+    z-index: 18;
+    border: 0; }
 .navbar-nav .dropdown-menu {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   color: #777777;
@@ -801,5 +802,62 @@
     font-size: 14px;
     font-family: "Montserrat";
     min-height: 45px; }
+
+.entry-header {
+  background-color: #dd3333; }
+
+.entry-header {
+  padding: 50px 0; }
+
+.entry-header .entry-title {
+  text-align: center; }
+
+.entry-header .entry-title h1 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 50px; }
+
+.entry-header .entry-title .sub_title {
+  margin: 0;
+  line-height: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Montserrat"; }
+
+.entry-header .entry-title .sub_title,
+.entry-header .entry-title h1 {
+  color: #fff; }
+
+.stm_breadcrumbs_unit {
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #f0f2f5; }
+
+.stm_breadcrumbs_unit {
+  padding: 9px 0 7px;
+  margin-bottom: 60px; }
+
+.stm_breadcrumbs_unit .navxtBreads {
+  font-size: 11px;
+  color: #aaa;
+  text-transform: uppercase; }
+
+.stm_breadcrumbs_unit .navxtBreads > span {
+  color: #aaa;
+  font-size: 11px;
+  text-transform: uppercase; }
+
+.stm_breadcrumbs_unit .navxtBreads > span a {
+  font-size: 11px;
+  color: #aaa; }
+
+.stm_breadcrumbs_unit .navxtBreads > span a:hover {
+  color: #dd3333; }
+
+.stm_breadcrumbs_unit .navxtBreads i {
+  font-size: 10px;
+  margin: 0 10px;
+  color: #dcdcdc; }
 
 /*# sourceMappingURL=style.css.map */
